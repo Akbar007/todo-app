@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #f7f7f7;
+}
+.container{
+	width: 40%;
+	margin: 50px auto;
+	text-align: center;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 3px 5px #e1e1e1;
+	border-radius: 5px;
+}
+h3{
+	background-color: #3367d6;
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: 600;
+	padding: 10px 0;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	box-shadow: 0 4px 5px #e1e1e1;
+}
+form{
+	margin-top: 20px;
+	text-align: left;
+	padding: 15px;
+}
+form input{
+	padding: 10px 10px;
+	border-radius: 3px;
+	border: 1px solid #e1e1e1;
+}
+form input[type="submit"]{
+	padding: 10px 10px;
+	font-weight: 700;
+	background: #3367d6;
+	color: #fff;
+	transition: border .50s,background .50s;
+	outline: none;
+}
+form input[type="text"]{
+	width: 80%;
+	display: inline-block;
+	outline: none;
+	font-weight: 500;
+	font-family: sans-serif;
+}
+form input[type="submit"]:hover{
+	cursor: pointer;
+	border: 1px solid #3367d6;
+	background: #fff;
+	color: #333;
+	outline: none;
+}
+ul{
+	text-align: left;
+	list-style: none;
+	padding: 15px;
+}
+ul li span{
+	display: inline-block;
+	margin: 10px;
+}
+.remove{
+	float: right;
+	background: #3367d6;
+	padding: 5px 10px;
+	color: #fff;
+	font-weight: 400;
+	border-radius: 2px;
+	transition: background .50s;
+	border: 1px solid transparent;
+}
+ul:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+ul li span.remove:hover{
+	background: #fff;
+	color: #000;
+	border: 1px solid #3367d6;
+	cursor: pointer;
+}
+ul li span.list{
+	border-bottom: 2px solid #e1e1e1;
+	padding: 5px 0;
+	color: grey;
+	font-family: sans-serif;
+}
+
+@media screen and (max-width: 680px){	
+	.container{
+		width: 80%;
+		margin: 5% 10%;
+	}
+}
